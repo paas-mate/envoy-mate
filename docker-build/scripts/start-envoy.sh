@@ -1,8 +1,9 @@
 #!/bin/bash
 
 mkdir -p $ENVOY_HOME/logs
+mkdir -p $ENVOY_HOME/conf
 
-CONF=$ENVOY_HOME/envoy.yaml
+CONF=$ENVOY_HOME/conf/envoy.yaml
 if [ -f "$CONF" ]; then
   echo "$CONF exists, just start"
 else
